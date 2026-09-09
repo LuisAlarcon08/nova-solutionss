@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/main/java/edu/enriques/nova/solutionss/MainApp.java</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/resources/view/login-view.fxml</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/main/java/edu/enriques/nova/solutionss/controller/LoginController.java</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/resources/css/login-view.css</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/main/java/edu/enriques/nova/solutionss/controller/RegistroController.java</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/main/java/edu/enriques/nova/solutionss/controller/DashboardController.java</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/main/java/edu/enriques/nova/solutionss/util/SceneManager.java</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/main/java/edu/enriques/nova/solutionss/config/Credentials.java</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/main/java/edu/enriques/nova/solutionss/config/DataBaseConnection.java</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/main/java/edu/enriques/nova/solutionss/model/Rol.java</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/main/java/edu/enriques/nova/solutionss/model/Usuario.java</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/main/java/edu/enriques/nova/solutionss/dao/UsuarioDao.java</file>
+        </group>
+    </open-files>
+</project-private>
