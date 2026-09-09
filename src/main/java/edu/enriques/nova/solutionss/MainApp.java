@@ -1,35 +1,15 @@
 package main.java.edu.enriques.nova.solutionss;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
-
-import java.net.URL;
+import main.java.edu.enriques.nova.solutionss.util.SceneManager;
 
 public class MainApp extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        try {
-            // Buscamos el fxml directamente en la carpeta resources/view/ usando la ruta absoluta estándar
-            URL fxmlUrl = getClass().getResource("/resources/view/login-view.fxml");
-            
-            if (fxmlUrl == null) {
-                throw new RuntimeException("No se encontró /resources/view/login-view.fxml");
-            }
-
-            Parent root = FXMLLoader.load(fxmlUrl);
-            Scene scene = new Scene(root, 600, 400);
-            
-            primaryStage.setTitle("Nova Solutions - Iniciar Sesión");
-            primaryStage.setScene(scene);
-            primaryStage.show();
-            
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        SceneManager.setPrimaryStage(primaryStage);
+        SceneManager.switchTo("login-view.fxml", "Nova Solutions - Iniciar Sesión", 900, 700);
     }
 
     public static void main(String[] args) {

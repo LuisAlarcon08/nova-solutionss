@@ -1,0 +1,61 @@
+
+.mainFxmlClass {
+
+}
+.dashboard-root {
+    -fx-background-color: #0f172a;
+    -fx-padding: 30px;
+}
+
+/* Título */
+.dashboard-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.dashboard-subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #94a3b8;
+}
+
+/* Tarjetas de Módulo */
+.card-button {
+    -fx-background-color: #1e293b;
+    -fx-border-color: #334155;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 20px;
+    -fx-cursor: hand;
+    -fx-alignment: center;
+}
+
+.card-button:hover {
+    -fx-background-color: #334155;
+    -fx-border-color: #3b82f6;
+}
+
+.card-icon {
+    -fx-font-size: 32px;
+}
+
+.card-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f8fafc;
+}
+
+/* Botón de Salir / Cerrar Sesión */
+.btn-logout {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+}
+
+.btn-logout:hover {
+    -fx-background-color: #b91c1c;
+}

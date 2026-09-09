@@ -2,71 +2,56 @@
 
 <?import java.lang.String?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" styleClass="root-pane" stylesheets="@../resources/css/login-view.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.edu.enriques.nova.solutionss.controller.LoginController">
-    
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" styleClass="root-pane" stylesheets="@/resources/css/login-view.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.edu.enriques.nova.solutionss.controller.LoginController">
     <children>
-        <!-- Contenedor que centra el formulario como en la captura de GitHub -->
         <VBox alignment="CENTER" spacing="20.0" stylesheets="@../css/login-view.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-            
             <children>
-                <!-- Logo de Nova Solutions (puedes usar el que tengas) -->
-                <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../resources/images/nova-logo-white.png" /> <!-- Cambia esta ruta a tu logo -->
-                    </image>
-                </ImageView>
-
-                <!-- Título del formulario -->
+                <!-- Título principal -->
                 <Label styleClass="form-title" text="Sign in to Nova Solutions" />
 
-                <!-- Caja principal del formulario (estilo GitHub) -->
+                <!-- Formulario -->
                 <VBox maxWidth="350.0" prefWidth="350.0" spacing="15.0" styleClass="login-box">
                     <children>
-                        <!-- Campo: Usuario -->
                         <VBox spacing="5.0">
-                            <Label styleClass="field-label" text="Usuario" />
-                            <TextField fx:id="txtUsuario" promptText="Username or email address" styleClass="github-field" />
+                            <children>
+                                <Label styleClass="field-label" text="Usuario" />
+                                <TextField fx:id="txtUsuario" promptText="Username or email address" styleClass="github-field" />
+                            </children>
                         </VBox>
 
-                        <!-- Campo: Contraseña -->
                         <VBox spacing="5.0">
-                            <HBox alignment="CENTER_LEFT">
-                                <Label styleClass="field-label" text="Contraseña" HBox.hgrow="ALWAYS" />
-                                <Hyperlink styleClass="forgot-link" text="Forgot password?" />
-                            </HBox>
-                            <PasswordField fx:id="txtPassword" styleClass="github-field" />
+                            <children>
+                                <HBox alignment="CENTER_LEFT">
+                                    <children>
+                                        <Label styleClass="field-label" text="Contraseña" HBox.hgrow="ALWAYS" />
+                                    </children>
+                                </HBox>
+                                <PasswordField fx:id="txtPassword" styleClass="github-field" />
+                            </children>
                         </VBox>
                         
-                        <!-- Botón: Iniciar Sesión (Verde GitHub) -->
                         <Button fx:id="btnIniciar" mnemonicParsing="false" onAction="#handleLogin" prefWidth="350.0" styleClass="btn-github-green" text="Sign in" />
                     </children>
                 </VBox>
 
-                <!-- Caja secundaria (New to GitHub?) -->
-                <VBox alignment="CENTER" maxWidth="350.0" prefWidth="350.0" styleClass="signup-box">
-                    <children>
-                        <Label styleClass="signup-text" text="New to Nova Solutions?" />
-                        <Hyperlink fx:id="linkCrearCuenta" onAction="#handleIrARegistro" styleClass="signup-link" text="Create an account" />
-                    </children>
-                </VBox>
+                <!-- Registro -->
+                <VBox alignment="CENTER" maxWidth="350.0" prefWidth="350.0" styleClass="signup-box" />
             </children>
          <styleClass>
-            <String fx:value="github-field" />
-            <String fx:value="field-label" />
-            <String fx:value="form-title" />
+            <String fx:value="root-pane" />
             <String fx:value="forgot-link" />
-            <String fx:value="signup-text" />
             <String fx:value="signup-link" />
+            <String fx:value="root-pane" />
+            <String fx:value="signup-text" />
+            <String fx:value="mainFxmlClass" />
+            <String fx:value="forgot-link" />
          </styleClass>
         </VBox>
     </children>

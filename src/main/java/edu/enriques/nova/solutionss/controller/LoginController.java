@@ -47,6 +47,8 @@ public class LoginController {
 
         if (usuarioLogueado != null) {
             mostrarAlerta(Alert.AlertType.INFORMATION, "Nova Solutions - Éxito", "¡Bienvenido, " + usuarioLogueado.getNombreCompleto() + "!");
+            // Redirige al Dashboard de la aplicación
+            SceneManager.showDashboard();
         } else {
             mostrarAlerta(Alert.AlertType.ERROR, "Nova Solutions - Error", "Credenciales incorrectas. Verifica tu usuario y contraseña.");
         }
@@ -70,6 +72,8 @@ public class LoginController {
         if (registrado) {
             mostrarAlerta(Alert.AlertType.INFORMATION, "Nova Solutions - Registro Exitoso", "¡Usuario " + usuarioStr + " registrado con éxito!");
             limpiarCampos();
+            // Retorna al login tras un registro exitoso
+            SceneManager.switchTo("login-view.fxml", "Nova Solutions - Iniciar Sesión", 400, 500);
         } else {
             mostrarAlerta(Alert.AlertType.ERROR, "Nova Solutions - Error", "No se pudo registrar el usuario. Es probable que el nombre de usuario o correo ya estén en uso.");
         }
@@ -77,7 +81,8 @@ public class LoginController {
 
     @FXML
     private void handleIrARegistro(ActionEvent event) {
-        mostrarAlerta(Alert.AlertType.INFORMATION, "Nova Solutions", "¡El botón de crear cuenta ya está conectado correctamente!");
+        // Redirige a la vista del formulario de registro
+        SceneManager.switchTo("registro-view.fxml", "Nova Solutions - Registro de Usuario", 400, 550);
     }
 
     private void mostrarAlerta(Alert.AlertType tipo, String titulo, String mensaje) {

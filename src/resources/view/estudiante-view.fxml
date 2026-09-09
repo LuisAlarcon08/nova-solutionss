@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="650.0" prefWidth="950.0" stylesheets="@../css/estudiante-view.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.edu.enriques.nova.solutionss.controller.EstudianteController">
+    <children>
+        <VBox spacing="15.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                    <children>
+                        <Label style="-fx-font-size: 22px; -fx-font-weight: bold;" text="Gestión de Estudiantes" />
+                    </children>
+                </HBox>
+
+                <HBox spacing="10.0">
+                    <children>
+                        <VBox prefWidth="140.0" spacing="5.0">
+                            <children>
+                                <Label text="Carnet:" />
+                                <TextField fx:id="txtCarnet" promptText="Ej. 2023289" />
+                            </children>
+                        </VBox>
+                        <VBox prefWidth="200.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="Nombres:" />
+                                <TextField fx:id="txtNombres" promptText="Nombres" />
+                            </children>
+                        </VBox>
+                        <VBox prefWidth="200.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="Apellidos:" />
+                                <TextField fx:id="txtApellidos" promptText="Apellidos" />
+                            </children>
+                        </VBox>
+                        <VBox prefWidth="140.0" spacing="5.0">
+                            <children>
+                                <Label text="Grado:" />
+                                <TextField fx:id="txtGrado" promptText="Ej. 4to Informática" />
+                            </children>
+                        </VBox>
+                        <VBox prefWidth="90.0" spacing="5.0">
+                            <children>
+                                <Label text="Sección:" />
+                                <TextField fx:id="txtSeccion" promptText="Ej. A" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+
+                <HBox spacing="10.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#handleGuardar" style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 15;" text="Guardar" />
+                        <Button mnemonicParsing="false" onAction="#handleLimpiar" style="-fx-background-color: #95a5a6; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 15;" styleClass="btn-limpiar" stylesheets="@../css/estudiante-view.css" text="Limpiar" />
+                        <Button mnemonicParsing="false" onAction="#handleVolver" style="-fx-background-color: #34495e; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 15;" text="Volver al Menú" />
+                    </children>
+                </HBox>
+
+                <TextField fx:id="txtBuscar" promptText="🔍 Buscar por Carnet, Nombre o Apellido..." style="-fx-padding: 8px;" />
+
+                <TableView fx:id="tblEstudiantes" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="colId" prefWidth="60.0" text="ID" />
+                        <TableColumn fx:id="colCarnet" prefWidth="130.0" text="Carnet" />
+                        <TableColumn fx:id="colNombres" prefWidth="220.0" text="Nombres" />
+                        <TableColumn fx:id="colApellidos" prefWidth="220.0" text="Apellidos" />
+                        <TableColumn fx:id="colGrado" prefWidth="160.0" text="Grado" />
+                        <TableColumn fx:id="colSeccion" prefWidth="90.0" text="Sección" />
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+    </children>
+   <styleClass>
+      <String fx:value="root-pane" />
+      <String fx:value="label-header" />
+      <String fx:value="btn-guardar" />
+      <String fx:value="btn-eliminar" />
+      <String fx:value="btn-limpiar" />
+      <String fx:value="btn-volver" />
+   </styleClass>
+</AnchorPane>
