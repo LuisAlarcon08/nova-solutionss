@@ -2,60 +2,47 @@
 .mainFxmlClass {
 
 }
-.dashboard-root {
-    -fx-background-color: #0f172a;
-    -fx-padding: 30px;
+/* Estilo del Fondo Principal */
+.main-pane {
+    -fx-background-color: #1a2332;
 }
 
-/* Título */
-.dashboard-title {
-    -fx-font-size: 28px;
+/* Títulos */
+.title-label {
+    -fx-font-size: 26px;
     -fx-font-weight: bold;
-    -fx-text-fill: #ffffff;
+    -fx-text-fill: #34495e;
 }
 
-.dashboard-subtitle {
+.subtitle-label {
     -fx-font-size: 14px;
-    -fx-text-fill: #94a3b8;
+    -fx-text-fill: #95a5a6;
 }
 
-/* Tarjetas de Módulo */
-.card-button {
-    -fx-background-color: #1e293b;
-    -fx-border-color: #334155;
-    -fx-border-radius: 12px;
-    -fx-background-radius: 12px;
-    -fx-padding: 20px;
-    -fx-cursor: hand;
-    -fx-alignment: center;
-}
-
-.card-button:hover {
-    -fx-background-color: #334155;
-    -fx-border-color: #3b82f6;
-}
-
-.card-icon {
-    -fx-font-size: 32px;
-}
-
-.card-title {
+/* Botón Gestión de Estudiantes (Azul) */
+.btn-dashboard-primary {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
     -fx-font-size: 16px;
     -fx-font-weight: bold;
-    -fx-text-fill: #f8fafc;
-}
-
-/* Botón de Salir / Cerrar Sesión */
-.btn-logout {
-    -fx-background-color: #dc2626;
-    -fx-text-fill: white;
-    -fx-font-weight: bold;
-    -fx-font-size: 13px;
-    -fx-background-radius: 8px;
-    -fx-padding: 10px 20px;
+    -fx-background-radius: 8;
     -fx-cursor: hand;
 }
 
-.btn-logout:hover {
-    -fx-background-color: #b91c1c;
+.btn-dashboard-primary:hover {
+    -fx-background-color: #2980b9;
+}
+
+/* Botón Cerrar Sesión (Rojo) */
+.btn-dashboard-danger {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.btn-dashboard-danger:hover {
+    -fx-background-color: #c0392b;
 }
