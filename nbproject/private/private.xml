@@ -15,6 +15,13 @@
             <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/main/java/edu/enriques/nova/solutionss/model/Rol.java</file>
             <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/main/java/edu/enriques/nova/solutionss/model/Usuario.java</file>
             <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/main/java/edu/enriques/nova/solutionss/dao/UsuarioDao.java</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/main/java/edu/enriques/nova/solutionss/dao/EstudianteDao.java</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/main/java/edu/enriques/nova/solutionss/model/Estudiante.java</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/resources/view/dashboard-view.fxml</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/resources/css/dashboard-view.css</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/main/java/edu/enriques/nova/solutionss/controller/EstudianteController.java</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/resources/css/estudiante-view.css</file>
+            <file>file:/C:/Users/Kikin/Documents/NetBeansProjects/nova-solutionss/src/resources/view/estudiante-view.fxml</file>
         </group>
     </open-files>
 </project-private>
